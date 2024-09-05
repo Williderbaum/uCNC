@@ -8,13 +8,12 @@ extern "C"
 #include "boardmap_reset.h"
 #define MCU MCU_AVR
 #define KINEMATIC KINEMATIC_CARTESIAN
-#define AXIS_COUNT 2
+#define AXIS_COUNT 3
 #define TOOL_COUNT 1
 #define BAUDRATE 115200
 #define BOARD BOARD_UNO
 #define BOARD_NAME "Arduino UNO"
 #define UART_PORT 0
-#define UART2_PORT 0
 #define ITP_TIMER 1
 #define RTC_TIMER 0
 #define ONESHOT_TIMER 2
@@ -55,7 +54,13 @@ extern "C"
 #define RX_PORT D
 #define IC74HC595_COUNT 0
 //Custom configurations
-
+#define PCINT0_PORT B
+#define PCINT1_PORT C
+#define PCINT2_PORT D
+#define PLANNER_BUFFER_SIZE 14
+#undef STEP_ISR_SKIP_MAIN
+#undef STEP_ISR_SKIP_IDLE
+#define USE_MACRO_BUFFER
 
 #ifdef __cplusplus
 }

@@ -657,6 +657,11 @@ extern "C"
 #undef SPI2_CS_IO_OFFSET
 #undef IC74HC595_COUNT
 #undef IC74HC595_CUSTOM_SHIFT_IO
+#undef PCINT0_PORT
+#undef PCINT1_PORT
+#undef PCINT2_PORT
+#undef PLANNER_BUFFER_SIZE
+#undef USE_MACRO_BUFFER
 
 #ifdef __cplusplus
 }
